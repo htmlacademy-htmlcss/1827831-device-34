@@ -60,6 +60,8 @@ body {
   font-weight: 800;
   text-transform: uppercase;
   line-height: 21px;
+  color: black;
+  text-decoration: none;
 }
 
 .title {
@@ -90,4 +92,67 @@ body {
   list-style-type: none;
   color: black;
   background: #ffe17f;
+}
+
+.delivery {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+.contacts-info {
+  font-family: "Rubik", sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.text-small {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  color: black;
+}
+
+.contacts-phone {
+  color: black;
+  text-decoration: none;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 18px;
+  color: black;
+}
+
+.text-bold {
+font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  color: black;
+}
+
+.product-card-price {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #444444;
+  text-decoration: none;
+}
+
+.pagination-link {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: black;
+  opacity: 30%;
 }
