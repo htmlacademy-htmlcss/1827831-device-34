@@ -1,13 +1,40 @@
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  src: url("/fonts/raleway/raleway-800.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: auto;
+  font-weight: 400;
+  src: url("fonts/rubik/rubik-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/rubik/rubik-700.woff2") format("woff2");
+  font-display: swap;
+}
+
 body {
-  font-family: "Raleway", "Rubik", sans-serif;
+  font-family: "Raleway", "Arial", sans-serif;
   font-size: 18px;
   line-height: 30px;
   background-color: #ffffff;
   color: #444444;
+  margin: auto;
+  width: 1440px;
+
 }
 
 .button {
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
   color: black;
   text-transform: uppercase;
@@ -46,6 +73,11 @@ body {
 .page-header {
   color: #ffffff;
   background-color: #ffe17f;
+  margin: 40px 140px;
+}
+
+.navigation {
+  margin: 0 60px;
 }
 
 .navigation-link {
@@ -60,7 +92,7 @@ body {
   font-weight: 800;
   text-transform: uppercase;
   line-height: 21px;
-  color: black;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -68,7 +100,8 @@ body {
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
-
+  color: #000000;
+  padding: 0;
 }
 
 .description {
@@ -83,16 +116,6 @@ body {
   font-weight: 400;
 }
 
-.cards-card {
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 800;
-  font-family: "Raleway", sans-serif;
-  text-decoration: none;
-  list-style-type: none;
-  color: black;
-  background: #ffe17f;
-}
 
 .delivery {
   font-family: "Raleway", sans-serif;
@@ -101,7 +124,7 @@ body {
   font-weight: 800;
   text-transform: uppercase;
   text-decoration: none;
-  color: black;
+  color: #000000;
 }
 
 .contacts-info {
@@ -117,26 +140,26 @@ body {
   line-height: 20px;
   font-weight: 400;
   text-decoration: none;
-  color: black;
+  color: #000000;
 }
 
 .contacts-phone {
-  color: black;
+  color: #000000;
   text-decoration: none;
 }
 
 .breadcrumbs-link {
   font-size: 16px;
   line-height: 18px;
-  color: black;
+  color: #000000;
 }
 
 .text-bold {
-font-family: "Rubik", sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
-  color: black;
+  color: #000000;
 }
 
 .product-card-price {
@@ -153,6 +176,95 @@ font-family: "Rubik", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
-  color: black;
+  color: #000000;
   opacity: 30%;
+}
+
+.logo {
+  padding: 19px 60px 30px 60px;
+}
+
+.navigation-row {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+}
+
+.navigation-item {
+  display: flex;
+  align-items: center;
+  padding-right: 47px;
+}
+
+.row-search {
+width: 517px;
+}
+
+.navigation-list {
+  display: flex;
+  justify-content: end;
+  list-style-type: none;
+  padding: 0;
+}
+
+.slide {
+  display: flex;
+  margin: 70px 140px;
+}
+
+.slide-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 70px 140px;
+  padding: 0;
+}
+
+.cards-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 160px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+  color: #000000;
+  background: #ffe17f;
+}
+
+
+.cards-title {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  color: #000000;
+}
+
+.advantages {
+  display: flex;
+  justify-content: space-between;
+  margin: 70px 140px;
+}
+
+.advantages-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.tab {
+  width: 448px;
+}
+
+.block {
+  background: #f0f0f0;
 }
