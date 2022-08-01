@@ -51,19 +51,23 @@
   </nav>
 </header>
 <main class="main-inner">
+  <div class="header-breadcrumbs">
   <h1 class="inner-header-title title">Моноподы для селфи</h1>
 
   <ul class="breadcrumbs">
     <li class="breadcrumbs-item">
       <a class="navigation-link breadcrumbs-link" href="index.html">Главная</a>
+      <img src="images/arrow.svg" alt="Стрелка." height="7" width="4" class="breadcrumbs-arrow">
     </li>
     <li>
       <a class="navigation-link breadcrumbs-link" href="#">Каталог товаров</a>
+      <img src="images/arrow.svg" alt="Стрелка." height="7" width="4" class="breadcrumbs-arrow">
     </li>
     <li>
       <a class="navigation-link breadcrumbs-link" href="#">Моноподы для селфи</a>
     </li>
   </ul>
+  </div>
   <section class="catalog-products">
     <h2 class="visually-hidden">Список товаров с фильтрами</h2>
 
@@ -137,7 +141,7 @@
     </form>
     </div>
     <div class="right-column">
-      <div>
+      <div class="select">
       <p class="form-title navigation-link-current">Сортировка:</p>
       <select class="select-control description" aria-label="Сортировка">
         <option value="popular">Популярные</option>
@@ -183,7 +187,9 @@
           </a>
         </li>
       </ul>
+      <div class="border-button">
       <a class="button-more navigation-link-current" href="./catalog.html">Загрузить еще</a>
+      </div>
       <ul class="pagination">
         <li class="pagination-item">
           <a href="#" class="pagination-prev pagination-disabled">
