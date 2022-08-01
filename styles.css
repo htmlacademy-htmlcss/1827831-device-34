@@ -352,7 +352,7 @@ body {
 }
 
 .subscribe-container-title {
-width: 348px;
+  width: 348px;
 }
 
 .subscribe-container-paragraph {
@@ -480,7 +480,7 @@ width: 348px;
 }
 
 .catalog-products {
-display: flex;
+  display: flex;
   margin: 0 140px
 }
 
