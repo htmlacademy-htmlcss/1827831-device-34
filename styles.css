@@ -96,6 +96,19 @@ body {
   text-decoration: none;
 }
 
+.arrows {
+  display: flex;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.arrow-up {
+}
+
+.arrow-down {
+  padding: 0 19px;
+}
+
 .title {
   font-weight: 800;
   font-size: 50px;
