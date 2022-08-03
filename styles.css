@@ -205,6 +205,7 @@ body {
   display: flex;
   list-style-type: none;
   justify-content: space-between;
+  align-items: center;
 }
 
 .navigation-item {
@@ -214,7 +215,6 @@ body {
 }
 
 .row-search {
-  width: 517px;
 }
 
 .navigation-list {
@@ -542,4 +542,28 @@ body {
   background-position: right center;
   border: none;
   height: 30px;
+}
+
+.search {
+  background-color: transparent;
+  min-width: 359px;
+  max-height: 40px;
+  border-radius: 50px 0 0 50px;
+  border: 2px solid;
+  background-image: url("images/search.svg");
+  background-position: left center;
+  background-repeat: no-repeat;
+  padding: 0;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.button-search {
+  background-color: transparent;
+  border-radius: 0 50px 50px 0;
+  border: 2px solid;
+  min-width: 160px;
+  padding: 0;
+  font-size: 16px;
+  line-height: 20px;
 }
