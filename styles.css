@@ -29,7 +29,7 @@ body {
   background-color: #ffffff;
   color: #444444;
   margin: auto;
-  width: 1440px;
+  max-width: 1440px;
 
 }
 
@@ -94,6 +94,14 @@ body {
   line-height: 21px;
   color: #000000;
   text-decoration: none;
+}
+
+.navigation-link-current-left {
+  margin-left: auto;
+}
+
+.navigation-link-current-right {
+  margin-right: auto;
 }
 
 .arrows {
@@ -222,8 +230,7 @@ body {
 }
 
 .slide-right {
-  display: flex;
-  flex-direction: column;
+
 }
 
 .cards {
@@ -287,6 +294,7 @@ body {
   margin: 70px 140px;
   width: 1160px;
   background-color: #f0f0f0;
+  text-decoration: none;
 }
 
 .delivery {
@@ -351,10 +359,7 @@ body {
 }
 
 .subscribe {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+
   margin: 70px 140px;
 }
 
@@ -389,24 +394,50 @@ body {
 }
 
 .footer-social-item {
+  padding-right: 15px;
+}
+
+.footer-social-item-tg {
   background: #ffffff;
   opacity: 30%;
   width: 40px;
   height: 40px;
   border-radius: 100%;
-}
-
-.footer-social-item-tg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
 }
 
 .footer-social-item-youtube {
-  background: url("images/youtube.png") no-repeat center;
+  background: #ffffff;
+  opacity: 30%;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-social-item-twitter {
-  background: url("images/twitter.svg") no-repeat center;
+  background: #ffffff;
+  opacity: 30%;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.svgfooter {
+  fill: #444444;
+}
+
+
+
+
 
 .contacts-address-text {
   color: white;
@@ -430,9 +461,7 @@ body {
 }
 
 .footer-block {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+
   padding-top: 75px;
 }
 
@@ -461,6 +490,7 @@ body {
 }
 
 .breadcrumbs-arrow {
+  margin-left: 10px;
 }
 
 .catalog-filter {
@@ -469,10 +499,12 @@ body {
   width: 320px;
 }
 
-.product-card {
+.product-cards {
   display: grid;
   grid-template-columns: repeat(2, 360px);
   column-gap: 40px;
+  list-style-type: none;
+  padding: 0;
 }
 
 .button-more {
@@ -486,7 +518,7 @@ body {
 
 .pagination {
   display: flex;
-  justify-content: space-between;
+ padding: 0;
   list-style-type: none;
   width: 760px;
   background: #ebebeb;
@@ -500,11 +532,14 @@ body {
 .select {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background: #ebebeb;
 }
 
 .select-control {
   background-image: url(images/arrow-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
   border: none;
   height: 30px;
 }
