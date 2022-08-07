@@ -111,7 +111,12 @@ body {
 .page-header {
   color: #ffffff;
   background-color: #ffe17f;
-  margin: 40px 140px;
+  margin: 40px 140px -142px 140px;
+  height: 300px;
+}
+
+.characteristics {
+  display: flex;
 }
 
 .navigation {
@@ -132,6 +137,20 @@ body {
   line-height: 21px;
   color: #000000;
   text-decoration: none;
+  letter-spacing: 2px;
+}
+
+.catalog-plus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  border: solid #000000;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  font-size: 26px;
+  opacity: 30%;
 }
 
 .navigation-link-current-left {
@@ -313,7 +332,8 @@ body {
 
 .advantages-list {
   list-style-type: none;
-  padding: 0;
+  padding-top: 64px;
+  border-right: 7px solid #000000;
 }
 
 .tab {
@@ -579,6 +599,23 @@ body {
   height: 30px;
 }
 
+.search-icon {
+  background: url("images/search.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.slide-first {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding-right: 81px;
+  padding-top: 29px;
+  font-size: 180px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
 .search {
   background-color: transparent;
   min-width: 359px;
@@ -591,6 +628,7 @@ body {
   padding: 0;
   font-size: 16px;
   line-height: 20px;
+  color: #000000;
 }
 
 .button-search {
@@ -605,4 +643,81 @@ body {
 
 .left-column {
   width: 280px;
+}
+
+.basket-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background: #ffffff;
+  width: 21px;
+  height: 21px;
+  color: #000000;
+  font-size: 14px;
+
+
+}
+
+.slider-button {
+  width: 20px;
+  height: 60px;
+  background-color: transparent;
+  cursor: pointer;
+  background-image: url("images/slider-left.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slider-prev {
+  transform: rotate(180deg);
+}
+
+.slider-pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.slider-pagination-button {
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  border: 2px solid;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-pagination-button-current {
+  background-color: #000000;
+}
+
+.slider-pagination-item {
+  padding-right: 20px;
+}
+
+.button-pagination {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+.characteristics-left {
+  padding-right: 20px;
+}
+
+.block-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.advantages-item {
+  padding-bottom: 35px;
 }

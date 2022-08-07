@@ -14,9 +14,9 @@
   </div>
   <nav class="navigation">
     <div class="navigation-row">
-      <form action="https://echo.htmlacademy.ru" class="row-search">
-        <label class="visually-hidden" for="search">Текст поиска</label>
-        <input class="search" id="search" type="text" placeholder="Текст поиска" name="search" required>
+      <form action="https://echo.htmlacademy.ru" class="row-search ">
+        <label class="visually-hidden " for="search">Текст поиска</label>
+        <input class="search " id="search" type="text" placeholder="Текст поиска" name="search" required>
         <button class="button-search" type="submit">Найти</button>
       </form>
       <ul class="navigation-list navigation-user">
@@ -30,8 +30,9 @@
           <a class="navigation-link" href="#">Сравнить</a>
         </li>
         <li class="navigation-item">
-          <img src="./images/basket.svg" alt="Корзина." width="16" height="15">
           <span class="basket-number">2</span>
+          <img src="./images/basket.svg" alt="Корзина." width="16" height="15">
+
           <a class="navigation-link" href="#">Корзина</a>
         </li>
       </ul>
@@ -39,6 +40,7 @@
     <div class="navigation-row">
       <div class=" navigation-item">
         <a class="navigation-link navigation-link-current" href="catalog.html">Каталог товаров</a>
+        <span class="catalog-plus">+</span>
       </div>
       <ul class="navigation-list">
         <li class="navigation-item">
@@ -53,39 +55,22 @@
       </ul>
     </div>
   </nav>
+  <span class="slide-first">01</span>
 </header>
 <main class="main-index">
   <section class="slider">
     <div class="slide">
       <a class="slide-image-link">
-        <img src="./images/kopter.jpg" width="560" height="560" alt="Квадрокоптер.">
+        <img src="./images/kopter-transparent.svg" width="560" height="560" alt="Квадрокоптер.">
       </a>
       <div class="slide-right">
-        <span>01</span>
+
         <h2 class="title">Порхает как бабочка, жалит как пчела!</h2>
         <p class="description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под
           стандартную камеру.
         </p>
+        <div class="button-pagination">
         <a href="#" class="button button-width-1">подробнее</a>
-
-        <div class="characteristics">
-          <div>
-            <div class="characters">800 м</div>
-            <p>Дальность полета</p>
-            <div class="characters">50 м</div>
-            <p>Радиус поражения</p>
-          </div>
-        </div>
-
-
-        <div class="slider-arrows">
-          <button class="slider-button slider-prev" type="button">
-            <span class="visually-hidden">Предыдущее фото</span>
-          </button>
-          <button class="slider-button slider-next" type="button">
-            <span class="visually-hidden">Следующее фото</span>
-          </button>
-        </div>
         <ol class="slider-pagination">
           <li class="slider-pagination-item">
             <button class="slider-pagination-button slider-pagination-button-current" type="button">
@@ -102,12 +87,30 @@
               <span class="visually-hidden">3 фото</span>
             </button>
           </li>
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button" type="button">
-              <span class="visually-hidden">4 фото</span>
-            </button>
-          </li>
+
         </ol>
+        </div>
+        <div class="characteristics">
+          <div class="characteristics-left">
+            <div class="characters">800 м</div>
+            <p>Дальность полета</p>
+          </div>
+          <div>
+            <div class="characters">50 м</div>
+            <p>Радиус поражения</p>
+          </div>
+        </div>
+
+
+        <div class="slider-arrows">
+          <button class="slider-button" type="button">
+            <span class="visually-hidden">Предыдущее фото</span>
+          </button>
+          <button class="slider-button slider-prev" type="button">
+            <span class="visually-hidden">Следующее фото</span>
+          </button>
+        </div>
+
       </div>
     </div>
 
@@ -184,6 +187,7 @@
     </ul>
   </section>
   <section class="block">
+    <div class="block-1">
     <div class="left-column">
     <nav class="advantages">
       <ul class="advantages-list">
@@ -205,22 +209,26 @@
             Ведь мы неплохо
             заработаем, поднимая его на ваш этаж.
           </div>
-          <div class="advantages-image">
+
+        </div>
+        <div class="advantages-image">
           <img src="./images/curier.svg" width="136" height="165" alt="Доставка.">
-          </div>
         </div>
       </div>
 
 
 
     </nav>
+    </div>
   </section>
+
   <a href="#" class="delivery-group">
 
 
     <div class="delivery-image">
       <img src="./images/car.svg" width="47" height="31" alt="Доставка под заказ.">
     </div>
+
     <div class="delivery">Доставим редкий товар под заказ</div>
     <div class="delivery-info">
       <div class="delivery-info-around">
