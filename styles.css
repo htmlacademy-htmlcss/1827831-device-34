@@ -50,6 +50,21 @@ body {
   transform-style: preserve-3d;
 }
 
+.button-footer {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 4px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
 .button-width-1 {
   width: 220px;
 }
@@ -58,6 +73,13 @@ body {
   width: 160px;
 }
 
+.button-width-3 {
+  width: 270px;
+}
+
+.button-width-4 {
+  width: 259px;
+}
 
 .button::before {
   content: '';
@@ -217,8 +239,9 @@ body {
 }
 
 .contacts-phone {
-  color: #000000;
-  text-decoration: none;
+  color: #444444;
+  font-style: normal;
+  text-decoration: underline;
 }
 
 .breadcrumbs-link {
@@ -417,8 +440,8 @@ body {
 }
 
 .subscribe {
-
-  margin: 70px 140px;
+  background: #f0f0f0;
+  padding: 70px 140px;
 }
 
 .subscribe-container {
@@ -428,7 +451,7 @@ body {
 }
 
 .subscribe-container-title {
-  width: 348px;
+
 }
 
 .subscribe-container-paragraph {
@@ -495,10 +518,14 @@ body {
 
 
 .contacts-address-text {
-  color: white;
   font-style: normal;
   margin-block-start: 0;
   margin-block-end: 0;
+
+}
+
+.color-white {
+  color: #ffffff;
 }
 
 .page-footer-buttons {
@@ -508,6 +535,7 @@ body {
   padding-inline-start: 0;
   margin-block-start: 0;
   margin-block-end: 0;
+  list-style-type: none;
 }
 
 .footer-social-list {
@@ -530,6 +558,8 @@ body {
 
 .footer-text {
   padding-top: 35px;
+  color: #ffffff;
+
 }
 
 .header-breadcrumbs {
@@ -720,4 +750,59 @@ body {
 
 .advantages-item {
   padding-bottom: 35px;
+}
+
+.contacts-left-column {
+  padding-right: 108px;
+}
+
+.company-item {
+  padding-bottom: 19px;
+}
+
+.company-item::marker {
+  color: #FFC700;
+  width: 8px;
+  height: 8px;
+}
+
+.title-decoration {
+  border-top: 7px solid #444444;
+  width: 84px;
+}
+
+.subscribe-email {
+  /*width: 810px;*/
+  display: flex;
+  height: 57px;
+}
+
+.button-subscribe {
+  width: 253px;
+  height: 57px;
+  border: 2px solid #c4c4c4;
+  /*background-color: transparent;*/
+}
+
+.email {
+  width: 557px;
+  border: none;
+  border-bottom: 2px solid #c4c4c4;
+  color: #444444;
+  opacity: 50%;
+  font-size: 18px;
+  line-height: 30px;
+  background: none;
+}
+
+.for-free::before {
+  content: '';
+  background-image: url("images/tick-big.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.line {
+  border-bottom: 7px solid #ffc500;
+  width: 80px;
 }
