@@ -99,7 +99,15 @@ body {
   background-color: #000000;
   width: 280px;
   height: 40px;
-
+  list-style-type: none;
+  align-items: center;
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 4px;
+  text-decoration: none;
 }
 
 
@@ -133,8 +141,9 @@ body {
 .page-header {
   color: #ffffff;
   background-color: #ffe17f;
-  margin: 40px 140px -142px 140px;
+  margin: 40px auto -142px auto;
   height: 300px;
+  width: 1160px;
 }
 
 .characteristics {
@@ -142,7 +151,9 @@ body {
 }
 
 .navigation {
+  position: relative;
   margin: 0 60px;
+  padding-top: 50px;
 }
 
 .navigation-link {
@@ -167,12 +178,20 @@ body {
   align-items: center;
   justify-content: center;
   color: #000000;
-  border: solid #000000;
+  border: 2px solid #000000;
   border-radius: 100%;
   width: 50px;
   height: 50px;
   font-size: 26px;
   opacity: 30%;
+  background-image: url("./images/plus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 10px;
+}
+
+.navigation-user {
+  padding-left: 26px;
 }
 
 .navigation-link-current-left {
@@ -201,26 +220,46 @@ body {
   font-size: 50px;
   line-height: 50px;
   color: #000000;
-  padding: 0;
+  margin: 0;
+  grid-column: 1/3;
+  grid-row: 1/2;
+
+}
+
+.slide-title {
+  padding-top: 121px;
+  padding-bottom: 29px;
 }
 
 .description {
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 30px;
+  margin: 0;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  padding-bottom: 51px;
 }
 
 .advantages-image {
-  display: flex;
-  align-items: end;
+
+  grid-column: 2/3;
+  grid-row: 2/3;
 }
+
+
 
 .characters {
   font-size: 36px;
   line-height: 30px;
   font-weight: 400;
+  font-family: "Rubik", sans-serif;
+  color: #000000;
 }
-
+.characters-range {
+  color: #444444;
+  font-family: "Rubik", sans-serif;
+}
 
 .contacts-info {
   font-family: "Rubik", sans-serif;
@@ -279,12 +318,14 @@ body {
 
 .logo {
   padding: 19px 60px 30px 60px;
+  transform: translateY(-39px);
+  position: absolute;
 }
 
 .navigation-row {
   display: flex;
-  list-style-type: none;
   justify-content: space-between;
+  list-style-type: none;
   align-items: center;
 }
 
@@ -294,23 +335,28 @@ body {
   padding-right: 47px;
 }
 
+.navigation-link-padding {
+  padding-left: 12px;
+}
+
 .row-search {
+  display: flex;
+  border-left: 0;
 }
 
 .navigation-list {
   display: flex;
-  justify-content: end;
-  list-style-type: none;
+
   padding: 0;
 }
 
 .slide {
   display: flex;
-  margin: 70px 140px;
+  margin: 70px auto;
 }
 
 .slide-right {
-
+padding-left: 40px;
 }
 
 .cards {
@@ -344,13 +390,15 @@ body {
   line-height: 24px;
   font-weight: 800;
   color: #000000;
+  margin: 0;
+  padding-top: 32px;
 }
 
 .advantages {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 70px 140px;
+  margin: 70px 0;
 }
 
 .advantages-list {
@@ -360,12 +408,28 @@ body {
 }
 
 .tab {
+  display: grid;
+  grid-template-columns: 448px 1fr;
   width: 448px;
+  padding-left: 150px;
+  padding-top: 142px;
+  gap: 34px;
 }
 
 .block {
+  /*position: relative;*/
+  z-index: 2;
 
+}
+
+.block::after {
+  content: "";
+  position: absolute;
   background: #f0f0f0;
+  width: 1440px;
+  height: 289px;
+  bottom: 0;
+  z-index: 2;
 }
 
 .delivery-group {
@@ -427,8 +491,11 @@ body {
 
 .contacts {
   display: flex;
-  margin: 70px 140px;
-}
+  margin: 70px auto;
+  width: 1160px;
+  }
+
+
 
 .contacts-schedule-item {
   list-style-type: none;
@@ -442,6 +509,7 @@ body {
 .subscribe {
   background: #f0f0f0;
   padding: 70px 140px;
+  height: 421px;
 }
 
 .subscribe-container {
@@ -459,11 +527,14 @@ body {
   justify-content: end;
   align-items: center;
   width: 560px;
+  margin: 0;
+  font-weight: 400;
 }
 
 .subscribe-form {
   display: flex;
   justify-content: space-between;
+  padding: 84px 0;
 }
 
 .page-footer {
@@ -638,6 +709,11 @@ body {
 }
 
 .slide-first {
+  font-family: "Rubik", sans-serif;
+  transform: translateY(60px);
+  position: absolute;
+  right: 0;
+  top: 0;
   display: flex;
   align-items: center;
   justify-content: right;
@@ -647,21 +723,35 @@ body {
   line-height: 30px;
   font-weight: 700;
   color: #ffffff;
+  background-color: #FFE17F;
 }
 
 .search {
   background-color: transparent;
-  min-width: 359px;
-  max-height: 40px;
-  border-radius: 50px 0 0 50px;
-  border: 2px solid;
-  background-image: url("./images/search.svg");
-  background-position: left center;
-  background-repeat: no-repeat;
-  padding: 0;
+  border: none;
   font-size: 16px;
   line-height: 20px;
+  padding-left: 16px;
+
+}
+
+.search-row {
+  display: flex;
+  align-items: center;
+  border-radius: 50px 0 0 50px;
   color: #000000;
+  border: 2px solid;
+  min-width: 359px;
+  max-height: 40px;
+  padding: 10px 30px;
+}
+
+.search-svg {
+  background-image: url("./images/search.svg");
+  width: 16px;
+  height: 16px;
+  background-position: left center;
+  background-repeat: no-repeat;
 }
 
 .button-search {
@@ -688,8 +778,7 @@ body {
   height: 21px;
   color: #000000;
   font-size: 14px;
-
-
+  transform: translateX(5px);
 }
 
 .slider-button {
@@ -700,6 +789,7 @@ body {
   background-image: url("./images/slider-left.svg");
   background-position: center;
   background-repeat: no-repeat;
+  border: none;
 }
 
 .slider-prev {
@@ -707,6 +797,9 @@ body {
 }
 
 .slider-pagination {
+  position: absolute;
+  right: 0;
+  bottom: 188px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -746,9 +839,9 @@ body {
 
 .block-1 {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  flex-direction: row;
+  width: 1160px;
+  margin: 0 auto;
 }
 
 .advantages-item {
@@ -759,9 +852,7 @@ body {
   padding-right: 108px;
 }
 
-.company-item {
-  padding-bottom: 19px;
-}
+
 
 .company-item::marker {
   color: #FFC700;
@@ -825,18 +916,51 @@ body {
 }
 
 .slide-image-link {
-  padding-bottom: 70px;
 }
 
 .slider {
   position: relative;
-  width: 1200px;
+  width: 1160px;
+  margin: 0 auto;
+  transform: translateY(-74px);
 }
 
 .slider-arrows {
   position: absolute;
+  width: 50%;
+  left: 0;
+  top: 211px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.slider-pagination {
-  position: absolute;
+
+
+.company-list {
+  list-style-type: none;
+  padding-left: 0;
 }
+
+.company-item {
+  position: relative;
+  padding-left: 34px;
+}
+
+.company-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background-color: #ffc700;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 100%;
+}
+
+.company-item+ .company-item {
+  margin-top: 20px;
+}
+
+

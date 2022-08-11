@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
-  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
 <header class="page-header">
@@ -15,32 +15,35 @@
   <nav class="navigation">
     <div class="navigation-row">
       <form action="https://echo.htmlacademy.ru" class="row-search ">
+        <div class="search-row">
+          <span class="search-svg"></span>
         <label class="visually-hidden" for="search">Текст поиска</label>
         <input class="search" id="search" type="text" placeholder="Текст поиска" name="search" required>
+        </div>
         <button class="button-search" type="submit">Найти</button>
       </form>
       <ul class="navigation-list navigation-user">
-        <li class="navigation-item">
+        <li class="navigation-item navigation-item-padding">
           <img src="./images/personal.svg" alt="Личный кабинет." width="13" height="13">
-          <a class="navigation-link" href="#">Войти</a>
+          <a class="navigation-link navigation-link-padding" href="#">Войти</a>
         </li>
 
         <li class="navigation-item">
           <img src="./images/compare.svg" alt="Сравнить." width="10" height="13">
-          <a class="navigation-link" href="#">Сравнить</a>
+          <a class="navigation-link navigation-link-padding" href="#">Сравнить</a>
         </li>
         <li class="navigation-item">
           <span class="basket-number">2</span>
           <img src="./images/basket.svg" alt="Корзина." width="16" height="15">
 
-          <a class="navigation-link" href="#">Корзина</a>
+          <a class="navigation-link navigation-link-padding" href="#">Корзина</a>
         </li>
       </ul>
     </div>
     <div class="navigation-row">
       <div class=" navigation-item">
         <a class="navigation-link navigation-link-current" href="catalog.html">Каталог товаров</a>
-        <span class="catalog-plus">+</span>
+        <span class="catalog-plus"></span>
       </div>
       <ul class="navigation-list">
         <li class="navigation-item">
@@ -65,7 +68,7 @@
       </a>
       <div class="slide-right">
         <span class="slide-first">01</span>
-        <h2 class="title">Порхает как бабочка, жалит как пчела!</h2>
+        <h2 class="title slide-title">Порхает как бабочка, жалит как пчела!</h2>
         <p class="description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под
           стандартную камеру.
         </p>
@@ -76,22 +79,12 @@
         <div class="characteristics">
           <div class="characteristics-left">
             <div class="characters">800 м</div>
-            <p>Дальность полета</p>
+            <p class="characters-range">Дальность полета</p>
           </div>
           <div>
             <div class="characters">50 м</div>
-            <p>Радиус поражения</p>
+            <p class="characters-range">Радиус поражения</p>
           </div>
-        </div>
-
-
-        <div class="slider-arrows">
-          <button class="slider-button" type="button">
-            <span class="visually-hidden">Предыдущее фото</span>
-          </button>
-          <button class="slider-button slider-prev" type="button">
-            <span class="visually-hidden">Следующее фото</span>
-          </button>
           <ol class="slider-pagination">
             <li class="slider-pagination-item">
               <button class="slider-pagination-button slider-pagination-button-current" type="button">
@@ -112,6 +105,17 @@
           </ol>
         </div>
 
+
+        <div class="slider-arrows">
+          <button class="slider-button" type="button">
+            <span class="visually-hidden">Предыдущее фото</span>
+          </button>
+          <button class="slider-button slider-prev" type="button">
+            <span class="visually-hidden">Следующее фото</span>
+          </button>
+
+        </div>
+
       </div>
     </div>
 
@@ -120,67 +124,67 @@
     <h2 class="visually-hidden">Разделы</h2>
     <ul class="cards">
       <li>
-        <div class="cards-card">
-          <a href="#">
+
+          <a href="#" class="cards-card">
             <img src="./images/vr.svg" width="97" height="55" alt="Виртуальная реальность.">
           </a>
-        </div>
+
         <div>
           <p class="cards-title">Виртуальная <br>реальность</p>
         </div>
 
       </li>
       <li>
-        <div class="cards-card">
-          <a href="#">
+
+          <a href="#" class="cards-card">
             <img src="./images/monopode.svg" width="87" height="117" alt="Моноподы для селфи.">
 
           </a>
-        </div>
+
         <div>
           <p class="cards-title">Моноподы <br>для селфи</p>
         </div>
       </li>
       <li>
-        <div class="cards-card">
-          <a href="#">
+
+          <a href="#" class="cards-card">
             <img src="./images/action-camera.svg" width="72" height="87" alt="Экшн-камеры.">
 
           </a>
-        </div>
-        <div class="cards-title">
-          <p>Экшн-камеры</p>
+
+        <div>
+          <p class="cards-title">Экшн-камеры</p>
         </div>
       </li>
       <li>
-        <div class="cards-card">
-          <a href="#">
+
+          <a href="#" class="cards-card">
             <img src="./images/fitnes.svg" width="108" height="66" alt="Фитнес-браслеты.">
 
           </a>
-        </div>
+
         <div>
           <p class="cards-title">Фитнес-браслеты</p>
         </div>
       </li>
       <li>
-        <div class="cards-card">
-          <a href="#">
+
+          <a href="#" class="cards-card">
             <img src="./images/watch.svg" width="57" height="98" alt="Умные часы.">
 
           </a>
-        </div>
+
         <div>
           <p class="cards-title">Умные часы</p>
         </div>
       </li>
       <li>
-        <div class="cards-card">
-          <a href="#">
+
+          <a href="#" class="cards-card">
             <img src="./images/kvadrokopter.svg" width="133" height="70" alt="Квадрокоптеры.">
 
           </a>
-        </div>
+
         <div>
           <p class="cards-title">Квадрокоптеры</p>
         </div>
@@ -193,7 +197,7 @@
     <nav class="advantages">
       <ul class="advantages-list">
         <li class="advantages-item">
-          <a href="#" class="button tab-active">Доставка</a>
+          <a href="#" class="tab-active">Доставка</a>
         </li>
         <li class="advantages-item">
           <a class="button button-width-2" href="#">Гарантия</a>
@@ -210,11 +214,11 @@
             Ведь мы неплохо
             заработаем, поднимая его на ваш этаж.
           </div>
+          <div class="advantages-image">
+            <img src="./images/curier.svg" width="136" height="165" alt="Доставка.">
+          </div>
+        </div>
 
-        </div>
-        <div class="advantages-image">
-          <img src="./images/curier.svg" width="136" height="165" alt="Доставка.">
-        </div>
       </div>
 
 
@@ -288,7 +292,7 @@
         <h2 class="title">Подпишитесь на рассылку</h2>
       </div>
       <div class="subscribe-container-paragraph">
-        <p>Еженедельный дайджест с обзорами новинок,
+        <p class="">Еженедельный дайджест с обзорами новинок,
           длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
         </p>
       </div>
@@ -317,10 +321,10 @@
       <p class="text-small contacts-address-text footer-text">Санкт-Петербург, набережная реки Карповки, 5, литера
         П.</p>
     </address>
-  </div>
+
   <div class="line">
   </div>
-  </div>
+
   <div class="footer-block footer-two">
     <nav>
       <ul class="page-footer-buttons">
@@ -380,7 +384,9 @@
       <img src="./images/logo-htmlacademy.svg" alt="логотип HTML-Академии.">
     </a>
   </div>
-</footer>
+
+  </div>
+</div></footer>
 
 </body>
 </html>
