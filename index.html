@@ -42,37 +42,44 @@
     </div>
     <div class="navigation-row">
       <div class=" navigation-item">
-        <a class="navigation-link navigation-link-current" href="catalog.html">Каталог товаров</a>
-        <span class="catalog-plus"></span>
-      </div>
-      <div class="popover popover-card">
+        <a class="navigation-link navigation-link-current navigation-link-with-plus" href="catalog.html">Каталог товаров<span class="catalog-plus"></span></a>
 
-        <div class="popover-content">
-          <h2 class="popover-title visually-hidden">Каталог товаров</h2>
-          <ul class="cart-items-list">
-            <li class="cart-item">
-              <p class="cart-item-title grid-column">Виртуальная реальность</p>
-            </li>
-            <li class="cart-item grid-row">
-              <p class="cart-item-title">Моноподы для cелфи</p>
-            </li>
-            <li class="cart-item">
-              <p class="cart-item-title grid-row-3">Экшн-камеры</p>
-            </li>
+        <div class="popover popover-card">
 
-            <li class="cart-item">
-              <p class="cart-item-title">Фитнес-браслеты</p>
-            </li>
-            <li class="cart-item">
-              <p class="cart-item-title grid-column-2">Умные часы</p>
-            </li>
+          <div class="popover-content">
+            <h2 class="popover-title visually-hidden">Каталог товаров</h2>
+            <ul class="cart-items-list">
+              <li class="cart-item">
+                <p class="cart-item-title grid-column">Виртуальная реальность</p>
+              </li>
+              <li class="cart-item">
+                <p class="cart-item-title">Фитнес-браслеты</p>
+              </li>
+              <li class="cart-item">
+                <p class="cart-item-title">Квадрокоптеры</p>
+              </li>
+            </ul>
+            <ul class="cart-items-list">
+              <li class="cart-item grid-row">
+                <p class="cart-item-title cart-item-title-selfy">Моноподы для cелфи</p>
+              </li>
+              <li class="cart-item">
+                <p class="cart-item-title grid-column-2">Умные часы</p>
+              </li>
+            </ul>
+              <div class="cart-item ">
+                <p class="cart-item-title grid-row-3">Экшн-камеры</p>
+              </div>
 
-          <li class="cart-item">
-            <p class="cart-item-title">Квадрокоптеры</p>
-          </li>
-          </ul>
+
+
+
+
+            </ul>
+          </div>
         </div>
       </div>
+
 
       <ul class="navigation-list">
         <li class="navigation-item">
@@ -270,7 +277,12 @@
     <div class="delivery">Доставим редкий товар под заказ</div>
     <div class="delivery-info">
       <div class="delivery-info-around">
-        <img src="images/info.svg" alt="Информация.">
+        <svg width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g opacity="0.3">
+            <path d="M2 0H0V2H2V0Z">
+            <path d="M2 4H0V12H2V4Z">
+          </g>
+        </svg>
       </div>
     </div>
   </a>
@@ -433,15 +445,38 @@
     <section class="modal-content">
       <h2 class="modal-title">Доставка под заказ</h2>
       <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
-        <p class="field-group">
+       <div class="auth-form-row">
+         <div>
+        <p class="field-group">Ваше имя:</p>
           <label class="visually-hidden" for="auth-name">Введите имя</label>
           <input class="auth-form-field field" type="text" id="auth-name" name="auth-name" placeholder="Введите имя">
-        </p>
-        <p class="field-group">
+
+         </div>
+         <div>
+         <p class="field-group">Ваш e-mail:</p>
+           <label class="visually-hidden" for="auth-name">почта</label>
+           <input class="auth-form-field " type="text" id="auth-name" name="auth-name" placeholder="почта">
+
+         </div>
+       </div>
+        <div class="auth-form-row">
+          <div>
+        <p class="field-group">Что нужно привезти:</p>
           <label class="visually-hidden" for="auth-list">В свободной форме</label>
-          <input class="auth-form-field field" type="list" id="auth-list" name="auth-list" placeholder="В свободной форме">
-        </p>
+          <input class="auth-form-field " type="list" id="auth-list" name="auth-list" placeholder="В свободной форме">
+
+          </div>
+          <div>
+          <p class="field-group">Количество:</p>
+            <label class="visually-hidden" for="auth-list">1</label>
+
+            <input class="auth-form-field" type="list" id="auth-list" name="auth-list" placeholder="1">
+
+          </div>
+        </div>
+        <div class="auth-form-row">
         <button class="button auth-form-button" type="submit">Отправить</button>
+        </div>
       </form>
     </section>
     </section>
