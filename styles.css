@@ -1406,7 +1406,7 @@ grid-column: 1/2;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 920px;
-  height: 568px;
+  min-height: 568px;
   background-color: #ffffff;
   border: 10px solid #000000;
   z-index: 100;
@@ -1415,7 +1415,7 @@ grid-column: 1/2;
 .modal {
   position: relative;
   margin: auto;
-  padding: 40px;
+  padding: 80px 72px;
   background-color: #ffffff;
 }
 
@@ -1423,7 +1423,7 @@ grid-column: 1/2;
 }
 
 .modal-close-button {
-  position: absolute;
+
   padding: 0;
   top: 0;
   right: 0;
@@ -1439,7 +1439,6 @@ grid-column: 1/2;
 
 .modal-title {
   margin: 0;
-  margin-bottom: 24px;
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 50px;
   line-height: 50px;
@@ -1449,7 +1448,8 @@ grid-column: 1/2;
 
 .auth-form-row {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .auth-form-field {
@@ -1459,13 +1459,79 @@ grid-column: 1/2;
   border: none;
   padding: 20px;
   opacity: 60%;
+}
+.auth-form-field:hover {
+  background-color: #dcdcdc;
+}
 
+.auth-form-field:focus {
+  border: 2px solid #af4fff;
+}
 
+.auth-form-field:invalid {
+  border: 2px solid #ff3d3d;
+  color: #ff3d3d;
 }
 
 .field {
   background-image: url(../device/images/logo.svg);
   background-repeat: no-repeat;
-  background-position: right;
   padding-right: 24px;
+  background-position: right 20px center;
+}
+
+
+.email-row {
+  background-image: url(../device/images/email.svg);
+  background-repeat: no-repeat;
+  padding-right: 24px;
+  background-position: right 20px center;
+}
+
+.information {
+  background-color: #ffe17f;
+  border-radius: 100%;
+  border: none;
+  width: 26px;
+  height: 26px;
+  font-weight: 700;
+}
+
+.quantity-button {
+width: 60px;
+height: 60px;
+background-color: #f0f0f0;
+border: none;
+padding: 20px 24.5px;
+margin: 0;
+}
+
+.quantity {
+  display: flex;
+}
+
+.field-group {
+  margin-bottom: 14px;
+}
+
+.comment {
+  width: 540px;
+}
+
+.input {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Rubik", sans-serif;
+}
+
+.row-bottom {
+  margin-bottom: 42px;
+}
+
+.first-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 42px;
+
 }

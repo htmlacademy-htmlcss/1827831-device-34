@@ -281,7 +281,7 @@
           <g opacity="0.3">
             <path d="M2 0H0V2H2V0Z">
             <path d="M2 4H0V12H2V4Z">
-          </g>
+            </path></path></g>
         </svg>
       </div>
     </div>
@@ -439,45 +439,58 @@
 </footer>
 <div class="modal-container">
   <div class="modal modal-auth">
-    <button class="modal-close-button">
-      <span class="visually-hidden">Закрыть</span>
-    </button>
+
     <section class="modal-content">
-      <h2 class="modal-title">Доставка под заказ</h2>
+      <div class="first-row">
+
+      <h2 class="modal-title">Доставка под заказ
+        </h2>
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+      </div>
       <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
        <div class="auth-form-row">
-         <div>
+         <div class="row-bottom">
         <p class="field-group">Ваше имя:</p>
           <label class="visually-hidden" for="auth-name">Введите имя</label>
           <input class="auth-form-field field" type="text" id="auth-name" name="auth-name" placeholder="Введите имя">
-
+<div class="input">Добавьте имя</div>
          </div>
-         <div>
+         <div class="row-bottom">
          <p class="field-group">Ваш e-mail:</p>
            <label class="visually-hidden" for="auth-name">почта</label>
-           <input class="auth-form-field " type="text" id="auth-name" name="auth-name" placeholder="почта">
-
+           <input class="auth-form-field email-row" type="text" id="auth-name" name="auth-name" placeholder="почта">
+           <div class="input">Забавный у вас адрес</div>
          </div>
        </div>
         <div class="auth-form-row">
-          <div>
-        <p class="field-group">Что нужно привезти:</p>
+          <div class="row-bottom">
+        <p class="field-group ">Что нужно привезти:</p>
           <label class="visually-hidden" for="auth-list">В свободной форме</label>
-          <input class="auth-form-field " type="list" id="auth-list" name="auth-list" placeholder="В свободной форме">
+          <input class="auth-form-field comment" type="list" id="auth-list" name="auth-list" placeholder="В свободной форме">
 
           </div>
-          <div>
-          <p class="field-group">Количество:</p>
-            <label class="visually-hidden" for="auth-list">1</label>
 
-            <input class="auth-form-field" type="list" id="auth-list" name="auth-list" placeholder="1">
+          <div class="row-bottom">
+          <label class="field-group">Количество:</label>
+            <button class="information">i</button>
 
+          <div class="quantity">
+            <button class="quantity-button">-</button>
+                      <input class="quantity-button" type="list" id="auth-list" name="auth-list" placeholder="1">
+            <button class="quantity-button">+</button>
+
+          </div>
           </div>
         </div>
         <div class="auth-form-row">
-        <button class="button auth-form-button" type="submit">Отправить</button>
+          <div>
+        <a class="button" href="#">Отправить</a>
         </div>
-      </form>
+        <div></div>
+        </div>
+        </div></form>
     </section>
     </section>
   </div>
