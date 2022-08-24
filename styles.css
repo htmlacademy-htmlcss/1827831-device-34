@@ -29,6 +29,7 @@ body {
   background-color: #ffffff;
   color: #444444;
   margin: auto;
+  width: 100%;
 }
 
 .button {
@@ -235,7 +236,6 @@ body {
   background-color: #FFE17F;
   min-height: 180px;
   margin: 187px -60px;
-  display: none;
 }
 
 .popover:before {
@@ -630,8 +630,8 @@ body {
   height: 289px;
   bottom: -53px;
   z-index: -1;
-  width: 100vw;
-  margin-left: calc((100vw - 100%) / -2);
+  width: 100%;
+  /*margin-left: calc((100vw - 100%) / -2);*/
 }
 
 .delivery-group {
