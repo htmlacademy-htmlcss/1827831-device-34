@@ -657,10 +657,23 @@ body {
 }
 
 .advantages {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 70px 0;
+}
+
+.advantages::after {
+  content: "";
+  position: absolute;
+  right: -7px;
+  bottom: 0;
+  background-color: #000000;
+  width: 7px;
+  height: calc((100% + 16px));
+  transform: translateY(12px);
+  z-index: 10;
 }
 
 .advantages-list {
@@ -668,11 +681,6 @@ body {
   padding-top: 39px;
   padding-left: 0;
 }
-
-.advantages-list::before {
-  border-right: 7px solid #000000;
-}
-
 
 .tab {
   display: grid;
@@ -737,11 +745,11 @@ body {
   outline: 2px solid #af4fff;
 }
 
-delivery-group:hover path {
+.delivery-group:hover path {
   fill: #000000;
 }
 
-delivery-group path {
+.delivery-group path {
   fill: #000000;
 }
 
