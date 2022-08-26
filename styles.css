@@ -78,7 +78,7 @@ body {
   text-transform: uppercase;
   font-size: 18px;
   line-height: 21px;
-  letter-spacing: 4px;
+  letter-spacing: 0.2em;
   text-decoration: none;
   color: #ffffff;
   padding-bottom: 4px;
@@ -224,7 +224,10 @@ body {
   color: #000000;
   text-decoration: none;
   letter-spacing: 0.2em;
-  padding-right: 29px;
+}
+
+.navigation-item-second + .navigation-item-second {
+  margin-left: 43px;
 }
 
 .catalog-plus1 {
@@ -245,15 +248,16 @@ body {
 
 .popover {
   position: absolute;
-  top: 0;
+  top: 60px;
   right: 0;
+  left: -60px;
   z-index: 1;
   box-sizing: border-box;
   width: 1160px;
   color: #000000;
   background-color: #FFE17F;
   min-height: 180px;
-  margin: 187px -60px;
+  margin: 0 0 -60px;
   display: none;
 }
 
@@ -329,6 +333,8 @@ body {
   list-style-type: none;
   text-decoration: none;
   color: #000000;
+  letter-spacing: -0.02em;
+
 }
 
 
@@ -541,6 +547,7 @@ body {
 
 .navigation-item {
   display: flex;
+  position: relative;
   align-items: center;
   margin-right: auto;
 }
@@ -641,6 +648,7 @@ body {
   margin: 0;
   padding-top: 32px;
   width: 160px;
+  letter-spacing: -0.02em;
 
 }
 
@@ -659,16 +667,25 @@ body {
   list-style-type: none;
   padding-top: 39px;
   padding-left: 0;
+}
+
+.advantages-list::before {
   border-right: 7px solid #000000;
 }
 
+
 .tab {
   display: grid;
-  grid-template-columns: 448px 1fr;
+  grid-template-columns: 525px 1fr;
   width: 448px;
   padding-left: 123px;
-  padding-top: 74px;
+  padding-top: 50px;
   gap: 34px;
+}
+
+.tabs {
+  flex-grow: 1;
+
 }
 
 .description-padding {
@@ -685,7 +702,7 @@ padding-bottom: 37px;
   content: "";
   position: absolute;
   background: #f0f0f0;
-  height: 289px;
+  height: calc((100% - 150px));
   bottom: -16px;
   z-index: -1;
   width: 100%;
@@ -811,8 +828,7 @@ delivery-group path {
 
 .subscribe {
   background: #f0f0f0;
-  padding: 70px 0;
-  height: 421px;
+  padding: 69px 0 0;
 }
 
 .subscribe-container {
@@ -839,13 +855,13 @@ delivery-group path {
 .subscribe-form {
   display: flex;
   justify-content: space-between;
-  padding: 84px 0;
+  padding: 84px 0 51px;
 }
 
 .page-footer {
   display: flex;
   justify-content: space-between;
-  padding: 70px;
+  padding: 65px 70px 70px;
   list-style-type: none;
   background: #444444;
   width: 100%;
@@ -901,6 +917,18 @@ delivery-group path {
   padding-top: 13px;
   font-family: "Rubik", sans-serif;
   padding-bottom: 30px;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.contacts-address-text-button {
+  font-weight: 700;
+}
+
+.contacts-address-text:hover::after {
+  border-bottom: 4px solid #ffc700;
+  color: #ffc700;
 }
 
 .contacts-address-text-padding {
@@ -934,7 +962,7 @@ delivery-group path {
 
 .footer-text {
   font-family: "Rubik", sans-serif;
-  padding-top: 27px;
+  padding-top: 19px;
   color: #ffffff;
   font-size: 16px;
   line-height: 20px;
@@ -1157,6 +1185,8 @@ delivery-group path {
 
 .slider-pagination {
   position: absolute;
+  top: 356px;
+  right: -31px;
   padding-right: 10px;
   bottom: 184px;
   display: flex;
@@ -1189,7 +1219,7 @@ delivery-group path {
   padding-right: 20px;
 }
 
-.slider-pagination-item:hover {
+.slider-pagination-button:hover {
   opacity: 60%;
 }
 
@@ -1294,6 +1324,8 @@ delivery-group path {
 .for-free {
   display: flex;
   align-items: center;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
 }
 
 .for-free::before {
@@ -1304,17 +1336,21 @@ delivery-group path {
   background-position: right center;
   width: 16px;
   height: 16px;
-
+  margin-right: 18px;
 }
 
 
 .page-footer-column {
   display: grid;
-  grid-template-columns: 234px 1fr 234px;
-  column-gap: 124px;
+  grid-template-columns: 250px 1fr 234px;
+  column-gap: 95px;
   grid-template-rows: min-content min-content min-content;
   width: 100%;
   align-items: center;
+}
+
+.contacts-phone-bottom {
+  padding-bottom: 19px;
 }
 
 .slide-image-link {
@@ -1410,7 +1446,7 @@ delivery-group path {
   grid-column: 2/3;
   grid-row: 3/4;
   margin: 0;
-  padding-left: 17px;
+  padding-left: 2px;
   list-style-type: none;
   text-decoration: none;
 }
@@ -1467,6 +1503,8 @@ delivery-group path {
   grid-column: 3/4;
   grid-row: 3/4;
   text-align: right;
+  justify-self: end;
+  padding-top: 10px;
 }
 
 .copyright:hover {
@@ -1476,6 +1514,11 @@ delivery-group path {
 .copyright:active {
   color: #ffffff;
   opacity: 30%;
+}
+
+.field-group {
+  margin-bottom: 14px;
+  display: table;
 }
 
 .copyright:focus {
@@ -1700,4 +1743,5 @@ delivery-group path {
 
 .tooltip-div {
   position: relative;
+  padding-left: 9px;
 }
