@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "Raleway", "Arial";
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 800;
   src: url("./fonts/raleway/raleway-800.woff2") format("woff2");
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: "Rubik", "Arial";
+  font-family: "Rubik";
   font-style: auto;
   font-weight: 400;
   src: url("./fonts/rubik/rubik-400.woff2") format("woff2");
@@ -15,7 +15,7 @@
 }
 
 @font-face {
-  font-family: "Rubik", "Arial";
+  font-family: "Rubik";
   font-style: normal;
   font-weight: 700;
   src: url("./fonts/rubik/rubik-700.woff2") format("woff2");
@@ -144,7 +144,7 @@ body {
 .tab-active {
   display: flex;
   justify-content: left;
-  padding-left: 10px;
+  padding-left: 17px;
   color: #ffe17f;
   background-color: #000000;
   width: 280px;
@@ -219,9 +219,10 @@ body {
   font-weight: 800;
   text-transform: uppercase;
   line-height: 21px;
+  font-size: 18px;
   color: #000000;
   text-decoration: none;
-  letter-spacing: 2px;
+  letter-spacing: 0.2em;
   padding-right: 29px;
 }
 
@@ -267,7 +268,7 @@ body {
 
 
 .catalog-plus {
-  margin-left: 13px;
+  margin-left: 17px;
   border: 2px solid #000000;
   border-radius: 100%;
   width: 50px;
@@ -404,7 +405,6 @@ body {
   margin: 0;
   grid-column: 1/2;
   grid-row: 1/2;
-  padding-bottom: 10px;
 }
 
 .title-padding {
@@ -444,6 +444,8 @@ body {
 .characters-range {
   color: #444444;
   font-family: "Rubik", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 30px;
 }
 
 .contacts-info {
@@ -593,7 +595,7 @@ body {
   justify-content: space-between;
   list-style-type: none;
   padding: 0;
-
+  margin-top: 57px;
 }
 
 .cards-card {
@@ -637,6 +639,12 @@ body {
   color: #000000;
   margin: 0;
   padding-top: 32px;
+  width: 160px;
+
+}
+
+.cards-padding {
+  padding-top: 45px;
 }
 
 .advantages {
@@ -648,7 +656,7 @@ body {
 
 .advantages-list {
   list-style-type: none;
-  padding-top: 64px;
+  padding-top: 39px;
   padding-left: 0;
   border-right: 7px solid #000000;
 }
@@ -657,10 +665,15 @@ body {
   display: grid;
   grid-template-columns: 448px 1fr;
   width: 448px;
-  padding-left: 150px;
-  padding-top: 142px;
+  padding-left: 123px;
+  padding-top: 74px;
   gap: 34px;
 }
+
+.description-padding {
+padding-bottom: 37px;
+}
+
 
 .block {
   position: relative;
@@ -672,7 +685,7 @@ body {
   position: absolute;
   background: #f0f0f0;
   height: 289px;
-  bottom: -53px;
+  bottom: -16px;
   z-index: -1;
   width: 100%;
   /*margin-left: calc((100vw - 100%) / -2);*/
@@ -682,7 +695,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 70px 0;
+  margin: 85px 0;
+
   width: 1160px;
   background-color: #f0f0f0;
   text-decoration: none;
@@ -724,7 +738,7 @@ delivery-group path {
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
-
+  letter-spacing: 0.2em;
   width: 836px;
   height: 100px;
   padding: 0;
@@ -993,8 +1007,8 @@ delivery-group path {
   display: flex;
   align-items: center;
   justify-content: right;
-  padding-right: 81px;
-  padding-top: 29px;
+  padding-right: 49px;
+  padding-top: 19px;
   font-size: 180px;
   line-height: 30px;
   font-weight: 700;
@@ -1126,13 +1140,12 @@ delivery-group path {
 
 .slider-pagination {
   position: absolute;
-  right: 0;
-  bottom: 188px;
+  padding-right: 10px;
+  bottom: 184px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 0;
-  padding: 0;
   list-style-type: none;
 }
 
@@ -1178,7 +1191,7 @@ delivery-group path {
 }
 
 .characteristics-left {
-  padding-right: 20px;
+  padding-right: 21px;
 }
 
 .block-1 {
@@ -1293,12 +1306,13 @@ delivery-group path {
 
 .slider-arrows {
   position: absolute;
-  width: 50%;
+  width: 560px;
   left: 0;
-  top: 211px;
+  top: 207px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-left: 31px;
 }
 
 
