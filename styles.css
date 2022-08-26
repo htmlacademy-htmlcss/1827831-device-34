@@ -689,7 +689,7 @@ body {
 }
 
 .description-padding {
-padding-bottom: 37px;
+  padding-bottom: 37px;
 }
 
 
@@ -1383,7 +1383,6 @@ delivery-group path {
 }
 
 
-
 .company-item {
   position: relative;
   padding-left: 34px;
@@ -1668,7 +1667,6 @@ delivery-group path {
 .quantity {
   display: flex;
 }
-
 
 
 .row-bottom {
