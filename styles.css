@@ -30,6 +30,7 @@ body {
   color: #444444;
   margin: auto;
   width: 100%;
+  min-width: 1160px
 }
 
 .button {
@@ -47,7 +48,8 @@ body {
   text-decoration: none;
   z-index: 2;
   transform-style: preserve-3d;
-  height: 40px;
+  min-height: 40px;
+  word-break: break-all;
 }
 
 .button:hover {
@@ -86,7 +88,7 @@ body {
 }
 
 .button-footer:hover {
-  border-bottom: 4px solid #ffc700;
+  border-bottom: 2px solid #ffc700;
   color: #ffc700;
 }
 
@@ -125,7 +127,7 @@ body {
 
 .button-width-4 {
   width: 259px;
-  padding-top: 19px;
+  margin-top: 19px;
 }
 
 .button-width-5 {
@@ -148,8 +150,11 @@ body {
   padding-left: 17px;
   color: #ffe17f;
   background-color: #000000;
+  max-width: 280px;
   width: 280px;
-  height: 40px;
+  overflow-wrap: break-word;
+  min-height: 40px;
+  height: auto;
   list-style-type: none;
   align-items: center;
   font-family: "Raleway", "Arial", sans-serif;
@@ -159,6 +164,7 @@ body {
   line-height: 21px;
   letter-spacing: 4px;
   text-decoration: none;
+  word-break:break-all;
 }
 
 
@@ -271,14 +277,23 @@ body {
 
 }
 
+.characteristics-padding {
+  padding-left: 40px;
+}
 
 .catalog-plus {
   margin-left: 17px;
   border: 2px solid #000000;
   border-radius: 100%;
   width: 50px;
+  min-width: 50px;
   height: 50px;
   position: relative;
+  opacity: 30%;
+}
+
+.slider-none {
+  display: none;
 }
 
 .catalog-plus::before, .catalog-plus::after {
@@ -313,6 +328,10 @@ body {
   display: block;
 }
 
+.navigation-row-second-catalog {
+  min-width: 236px;
+}
+
 .popover-content {
   font-family: "Rubik", "Arial", sans-serif;
   padding-left: 60px;
@@ -337,18 +356,19 @@ body {
 
 }
 
-
 .cart-items-list {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   list-style-type: none;
   text-decoration: none;
   width: 675px;
   padding: 0;
+  margin: 0;
 }
 
 .cart-item {
-  padding-right: 30px;
+  padding: 1em 1em 1em 0;
 }
 
 
@@ -378,7 +398,7 @@ body {
 }
 
 .navigation-user {
-  padding-left: 170px;
+  /*padding-left: 170px;*/
 }
 
 .navigation-link-current-left {
@@ -584,9 +604,14 @@ body {
 
 .navigation-list {
   display: flex;
-  flex-grow: 1;
-  padding-left: 15px;
   justify-content: right;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  padding-left: 15px;
+}
+
+.navigation-item-enter {
+  flex-grow: 5;
 }
 
 .slide {
@@ -935,7 +960,7 @@ body {
 }
 
 .contacts-address-text:hover::after {
-  border-bottom: 4px solid #ffc700;
+  border-bottom: 2px solid #ffc700;
   color: #ffc700;
 }
 
@@ -950,8 +975,10 @@ body {
 .page-footer-buttons {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   padding: 0;
   list-style-type: none;
+  font-family: "Raleway", "Arial", sans-serif;
 }
 
 
@@ -1153,6 +1180,7 @@ body {
 
 .basket-number {
   display: flex;
+  font-family: "Rubik", sans-serif;
   align-items: center;
   justify-content: center;
   border-radius: 100%;
@@ -1282,7 +1310,7 @@ body {
 .subscribe-email {
   /*width: 810px;*/
   display: flex;
-  height: 57px;
+  min-height: 57px;
 }
 
 .button-subscribe {
@@ -1293,11 +1321,10 @@ body {
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.2em;
-  width: 253px;
-  height: 57px;
+  max-width: 253px;
   border: 2px solid #c4c4c4;
   padding-left: 12px;
-  /*background-color: transparent;*/
+  overflow-wrap: break-word;
 }
 
 .button-subscribe:hover {
@@ -1334,6 +1361,7 @@ body {
   align-items: center;
   font-weight: 400;
   font-family: "Rubik", sans-serif;
+  padding-left: calc(16px + 18px);
 }
 
 .for-free::before {
@@ -1342,9 +1370,9 @@ body {
   background-image: url("./images/tick-big.svg");
   background-repeat: no-repeat;
   background-position: right center;
-  width: 16px;
   height: 16px;
-  margin-right: 18px;
+  min-width: 16px;
+  margin: 0 18px;
 }
 
 
@@ -1450,6 +1478,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   grid-column: 2/3;
   grid-row: 3/4;
   margin: 0;
@@ -1524,8 +1553,11 @@ body {
 }
 
 .field-group {
+  font-family: "Rubik", sans-serif;
   margin-bottom: 14px;
   display: table;
+  color: #000000;
+  letter-spacing: -0.02em;
 }
 
 .copyright:focus {
@@ -1565,7 +1597,6 @@ body {
 }
 
 .modal-close-button {
-
   padding: 0;
   top: 0;
   right: 0;
@@ -1636,6 +1667,7 @@ body {
   background-repeat: no-repeat;
   padding-right: 24px;
   background-position: right 20px center;
+  font-family: "Rubik", sans-serif;
 }
 
 
@@ -1655,9 +1687,7 @@ body {
   font-weight: 700;
 }
 
-.information:hover {
 
-}
 
 .quantity-button {
   width: 60px;
@@ -1717,9 +1747,9 @@ body {
   color: #ffffff;
   padding: 19px 17px;
   box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
-  width: 200px;
-  height: 166px;
-  margin-top: 10px;
+  width: 320px;
+  height: 307px;
+  margin-top: 20px;
   z-index: 1;
   left: -120px;
   top: 100%;
@@ -1749,5 +1779,5 @@ body {
 
 .tooltip-div {
   position: relative;
-  padding-left: 9px;
+  /*padding-left: 9px;*/
 }
