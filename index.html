@@ -34,24 +34,65 @@
           <img src="./images/compare.svg" alt="Сравнить." width="10" height="13">
           <a class="navigation-link navigation-link-padding" href="#">Сравнить</a>
         </li>
-        <li class="navigation-item navigation-item-padding">
+        <li class="navigation-item navigation-item-padding basket">
           <span class="basket-number">2</span>
           <img src="./images/basket.svg" alt="Корзина." width="16" height="15">
           <a class="navigation-link navigation-link-padding" href="#">Корзина</a>
+
+          <div class="basket-tooltip" role="tooltip">
+            <div class="basket-tooltip-pointer"></div>
+            <div class="basket-tooltip-item-row" id="basket-tooltip-label-1">
+              <div class="basket-tooltip-img-wrapper">
+                <img src="./images/selfie-small.png" width="39" height="44" alt="Любительская селфи-палка">
+              </div>
+              <div class="basket-tooltip-text">
+                Любительская селфи-палка
+              </div>
+              <div class="basket-tooltip-remove-item-wrapper">
+                <button class="basket-tooltip-remove-item-btn">
+                  <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10 1.07584L9.09091 0.166748L5 4.25766L0.909091 0.166748L0 1.07584L4.09091 5.16675L0 9.25766L0.909091 10.1667L5 6.07584L9.09091 10.1667L10 9.25766L5.90909 5.16675L10 1.07584Z"
+                      fill="white"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="basket-tooltip-item-row" id="basket-tooltip-label-2">
+              <div class="basket-tooltip-img-wrapper">
+                <img src="./images/monopode-small.png" width="39" height="44"
+                     alt="Изображение 'Профессиональная селфи-палка'">
+              </div>
+              <div class="basket-tooltip-text">
+                Профессиональная<br>селфи-палка
+              </div>
+              <div class="basket-tooltip-remove-item-wrapper">
+                <button class="basket-tooltip-remove-item-btn">
+                  <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10 1.07584L9.09091 0.166748L5 4.25766L0.909091 0.166748L0 1.07584L4.09091 5.16675L0 9.25766L0.909091 10.1667L5 6.07584L9.09091 10.1667L10 9.25766L5.90909 5.16675L10 1.07584Z"
+                      fill="white"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="basket-tooltip-item-row basket-tooltip-sum">
+              <div class="basket-tooltip-sum-left">
+                <span>Товаров:</span>
+                <span>2</span>
+              </div>
+              <div class="basket-tooltip-sum-right">
+                <span>Сумма:</span>
+                <span>2000</span>
+                <span>&#x20bd</span>
+              </div>
+            </div>
+            <div class="basket-tooltip-item-row basket-tooltip-button-wrapper">
+              <button class="basket-tooltip-button">Открыть корзину</button>
+            </div>
+          </div>
         </li>
       </ul>
-      <div class="tooltip-div">
-        <button class="information tooltip-toggle" type="button" aria-labelledby="tooltip-label"></button>
-        <div class="tooltip-basket" role="tooltip" id="tooltip-label-1">
-          <img src="images/selfie-small.png" width="39" height="44" alt="Любительская селфи-палка">
-          Любительская селфи-палка
-        </div>
-        <button class="information tooltip-toggle" type="button" aria-labelledby="tooltip-label"></button>
-        <div class="tooltip-basket" role="tooltip" id="tooltip-label-2">
-          <img src="images/monopode-small.png" width="39" height="44" alt="Изображение 'Профессиональная селфи-палка'">
-          Профессиональная селфи-палка
-        </div>
-      </div>
     </div>
     <div class="navigation-row-second">
       <div class=" navigation-item">
@@ -519,12 +560,14 @@
             </a>
           </li>
           <li>
-            <a href="#" class="contacts-address-text button-footer contacts-address-text-button contacts-address-text-padding">
+            <a href="#"
+               class="contacts-address-text button-footer contacts-address-text-button contacts-address-text-padding">
               Гарантия
             </a>
           </li>
           <li>
-            <a href="#" class="contacts-address-text button-footer contacts-address-text-button contacts-address-text-padding">
+            <a href="#"
+               class="contacts-address-text button-footer contacts-address-text-button contacts-address-text-padding">
               Контакты
             </a>
           </li>
@@ -607,7 +650,8 @@
                 <button class="information tooltip-toggle" type="button" aria-labelledby="tooltip-label">
                   i
                 </button>
-                <div class="tooltip" role="tooltip" id="tooltip-label">Постараемся найти, сколько нужно. Привезём
+                <div class="tooltip" role="tooltip" id="tooltip-label">
+                  Постараемся найти, сколько нужно. Привезём
                   сколько
                   получится по требованиям
                   к провозу багажа.

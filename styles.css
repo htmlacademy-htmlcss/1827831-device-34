@@ -164,7 +164,7 @@ body {
   line-height: 21px;
   letter-spacing: 4px;
   text-decoration: none;
-  word-break:break-all;
+  word-break: break-all;
 }
 
 
@@ -1688,7 +1688,6 @@ body {
 }
 
 
-
 .quantity-button {
   width: 60px;
   height: 60px;
@@ -1734,26 +1733,104 @@ body {
 
 }
 
-.tooltip-toggle {
+.basket {
+  position: relative;
+}
+
+.basket:hover > .basket-tooltip,
+.basket:focus > .basket-tooltip {
   display: block;
 }
 
-.tooltip {
+.basket-tooltip {
   position: absolute;
+  display: none;
+  width: 320px;
+  z-index: 100;
+  left: -120px;
+  top: 20px;
+  transition: 0.5s;
+}
+
+.basket-tooltip-pointer {
+  position: relative;
+  top: 10px;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #000000;
+  transform: translateX(-50%) rotate(-45deg);
+}
+
+.basket-tooltip-item-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-size: 16px;
   line-height: 20px;
   font-family: "Rubik", "Arial", sans-serif;
   background-color: #000000;
   color: #ffffff;
-  padding: 19px 17px;
-  box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
-  width: 320px;
-  height: 307px;
-  margin-top: 20px;
-  z-index: 1;
-  left: -120px;
-  top: 100%;
-  display: none;
+  padding: 20px;
+}
+
+.basket-tooltip-img-wrapper {
+  position: relative;
+  min-height: 40px;
+  min-width: 40px;
+}
+
+.basket-tooltip-img-wrapper > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.basket-tooltip-text {
+  flex-grow: 2;
+  display: block;
+  padding-left: 20px;
+}
+
+.basket-tooltip-remove-item-wrapper {
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.basket-tooltip-remove-item-btn {
+  background-color: #000000;
+  cursor: pointer;
+}
+
+.basket-tooltip-img-wrapper {
+  background-color: #000000;
+}
+
+.basket-tooltip-sum {
+  background-color: #1A1A1A;
+}
+
+.basket-tooltip-button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.basket-tooltip-button-wrapper {
+  padding: 20px;
+}
+
+.basket-tooltip-button {
+  width: 100%;
+  padding: 14px 25px;
+  font-family: "Raleway", "Arial", sans-serif;
+  text-transform: uppercase;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  background: #FFFFFF;
 }
 
 .tooltip-basket {
@@ -1788,7 +1865,6 @@ body {
   right: 0;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 .tooltip-div {
