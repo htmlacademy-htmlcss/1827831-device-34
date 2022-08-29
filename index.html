@@ -21,10 +21,12 @@
           <label class="visually-hidden" for="search">Текст поиска.</label>
           <input class="search" id="search" type="text" placeholder="Текст поиска" name="search" required>
         </div>
-        <button class="button-search" type="submit">Найти</button>
+        <button class="button-search" type="submit">
+          Найти
+        </button>
       </form>
       <ul class="navigation-list">
-        <li class="navigation-item navigation-item-padding ">
+        <li class="navigation-item navigation-item-padding navigation-item-enter">
           <img src="./images/personal.svg" alt="Личный кабинет." width="13" height="13">
           <a class="navigation-link navigation-link-padding" href="#">Войти</a>
         </li>
@@ -32,17 +34,72 @@
           <img src="./images/compare.svg" alt="Сравнить." width="10" height="13">
           <a class="navigation-link navigation-link-padding" href="#">Сравнить</a>
         </li>
-        <li class="navigation-item navigation-item-padding">
+        <li class="navigation-item navigation-item-padding basket">
           <span class="basket-number">2</span>
           <img src="./images/basket.svg" alt="Корзина." width="16" height="15">
           <a class="navigation-link navigation-link-padding" href="#">Корзина</a>
+
+          <div class="basket-tooltip" role="tooltip">
+            <div class="basket-tooltip-pointer"></div>
+            <div class="basket-tooltip-item-row" id="basket-tooltip-label-1">
+              <div class="basket-tooltip-img-wrapper">
+                <img src="./images/selfie-small.png" width="39" height="44" alt="Любительская селфи-палка">
+              </div>
+              <div class="basket-tooltip-text">
+                Любительская селфи-палка
+              </div>
+              <div class="basket-tooltip-remove-item-wrapper">
+                <button class="basket-tooltip-remove-item-btn">
+                  <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10 1.07584L9.09091 0.166748L5 4.25766L0.909091 0.166748L0 1.07584L4.09091 5.16675L0 9.25766L0.909091 10.1667L5 6.07584L9.09091 10.1667L10 9.25766L5.90909 5.16675L10 1.07584Z"
+                      fill="white"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="basket-tooltip-item-row" id="basket-tooltip-label-2">
+              <div class="basket-tooltip-img-wrapper">
+                <img src="./images/monopode-small.png" width="39" height="44"
+                     alt="Изображение 'Профессиональная селфи-палка'">
+              </div>
+              <div class="basket-tooltip-text">
+                Профессиональная<br>селфи-палка
+              </div>
+              <div class="basket-tooltip-remove-item-wrapper">
+                <button class="basket-tooltip-remove-item-btn">
+                  <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10 1.07584L9.09091 0.166748L5 4.25766L0.909091 0.166748L0 1.07584L4.09091 5.16675L0 9.25766L0.909091 10.1667L5 6.07584L9.09091 10.1667L10 9.25766L5.90909 5.16675L10 1.07584Z"
+                      fill="white"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="basket-tooltip-item-row basket-tooltip-sum">
+              <div class="basket-tooltip-sum-left">
+                <span>Товаров:</span>
+                <span>2</span>
+              </div>
+              <div class="basket-tooltip-sum-right">
+                <span>Сумма:</span>
+                <span>2000</span>
+                <span>&#x20bd</span>
+              </div>
+            </div>
+            <div class="basket-tooltip-item-row basket-tooltip-button-wrapper">
+              <button class="basket-tooltip-button">Открыть корзину</button>
+            </div>
+          </div>
         </li>
       </ul>
     </div>
     <div class="navigation-row-second">
       <div class=" navigation-item">
-        <a class="navigation-link navigation-link-current navigation-link-with-plus" href="#">Каталог товаров<span
-          class="catalog-plus"></span></a>
+        <a class="navigation-link navigation-link-current navigation-link-with-plus" href="#">
+          <span class="navigation-row-second-catalog">Каталог товаров</span>
+          <span class="catalog-plus"></span>
+        </a>
         <div class="popover popover-card">
           <div class="popover-content">
             <h1 class="popover-title visually-hidden">Каталог товаров.</h1>
@@ -75,8 +132,8 @@
         <li class="navigation-item-second">
           <a class="navigation-link navigation-link-current" href="#">Доставка</a>
         </li>
-        <li class="navigation-item-second ">
-          <a class="navigation-link navigation-link-current " href="#">Гарантия</a>
+        <li class="navigation-item-second">
+          <a class="navigation-link navigation-link-current" href="#">Гарантия</a>
         </li>
         <li class="navigation-item-second">
           <a class="navigation-link navigation-link-current navigation-padding" href="#">Контакты</a>
@@ -108,6 +165,112 @@
           <div>
             <div class="characters">50 м</div>
             <p class="characters-range">Радиус поражения</p>
+          </div>
+          <ol class="slider-pagination">
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                <span class="visually-hidden">1 фото.</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
+                <span class="visually-hidden">2 фото.</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
+                <span class="visually-hidden">3 фото.</span>
+              </button>
+            </li>
+          </ol>
+        </div>
+        <div class="slider-arrows">
+          <button class="slider-button" type="button">
+            <span class="visually-hidden">Предыдущее фото.</span>
+          </button>
+          <button class="slider-button slider-prev" type="button">
+            <span class="visually-hidden">Следующее фото.</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="slider slider-none">
+    <div class="slide">
+      <a class="slide-image-link">
+        <img src="./images/fitness-bracelet.png" width="560" height="560" alt="Фитнес-браслет.">
+      </a>
+      <div class="slide-right">
+        <span class="slide-first">02</span>
+        <h2 class="title slide-title">Худеем правильно!</h2>
+        <p class="description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать
+          диету.
+        </p>
+        <div class="button-pagination">
+          <a href="#" class="button button-width-1">подробнее</a>
+        </div>
+        <div class="characteristics">
+          <div class="characteristics-left">
+            <div class="characters">48 часов</div>
+            <p class="characters-range">Без подзарядки</p>
+          </div>
+
+          <ol class="slider-pagination">
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                <span class="visually-hidden">1 фото.</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
+                <span class="visually-hidden">2 фото.</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
+                <span class="visually-hidden">3 фото.</span>
+              </button>
+            </li>
+          </ol>
+        </div>
+        <div class="slider-arrows">
+          <button class="slider-button" type="button">
+            <span class="visually-hidden">Предыдущее фото.</span>
+          </button>
+          <button class="slider-button slider-prev" type="button">
+            <span class="visually-hidden">Следующее фото.</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="slider slider-none">
+    <div class="slide">
+      <a class="slide-image-link">
+        <img src="./images/selfie-stick.png" width="560" height="560" alt="Селфи-палка.">
+      </a>
+      <div class="slide-right">
+        <span class="slide-first">03</span>
+        <h2 class="title slide-title">Делай селфи, как Бен Стиллер! </h2>
+        <p class="description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров
+          длиной и весом всего 5 кг.
+
+        </p>
+        <div class="button-pagination">
+          <a href="#" class="button button-width-1">подробнее</a>
+        </div>
+        <div class="characteristics">
+          <div class="characteristics-left">
+            <div class="characters">8.5 м</div>
+            <p class="characters-range">Длина палки</p>
+          </div>
+          <div>
+            <div class="characters">5 кг</div>
+            <p class="characters-range">Вес палки</p>
+          </div>
+          <div class="characteristics-padding">
+            <div class="characters">Карбон</div>
+            <p class="characters-range">Материал</p>
           </div>
           <ol class="slider-pagination">
             <li class="slider-pagination-item">
@@ -227,6 +390,71 @@
       </div>
     </div>
   </section>
+  <section class="block slider-none">
+    <div class="wrapper">
+      <div class="block-1">
+        <div class="left-column">
+          <nav class="advantages">
+            <ul class="advantages-list">
+              <li class="advantages-item">
+                <a href="#" class="button button-width-2">Доставка</a>
+              </li>
+              <li class="advantages-item">
+                <a class="tab-active" href="#">Гарантия</a>
+              </li>
+              <li class="advantages-item">
+                <a class="button button-width-2" href="#">Кредит</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="tabs">
+          <div class="tab">
+            <h2 class="title">Гарантия</h2>
+            <div class="description description-padding">Если из-за возгорания купленного у нас товара у вас
+              сгорит дом — не переживайте, мы выдадим вам новый.
+              Товар, не дом, конечно же.
+            </div>
+            <div class="advantages-image">
+              <img src="./images/guarantee.png" width="171" height="195" alt="Гарантия.">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="block slider-none">
+    <div class="wrapper">
+      <div class="block-1">
+        <div class="left-column">
+          <nav class="advantages">
+            <ul class="advantages-list">
+              <li class="advantages-item">
+                <a href="#" class="button button-width-2">Доставка</a>
+              </li>
+              <li class="advantages-item">
+                <a class="button button-width-2" href="#">Гарантия</a>
+              </li>
+              <li class="advantages-item">
+                <a class="tab-active" href="#">Кредит</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="tabs">
+          <div class="tab">
+            <h2 class="title">Кредит</h2>
+            <div class="description description-padding">Залезть в долговую яму стало проще! Кредитные консультанты
+              подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.
+            </div>
+            <div class="advantages-image">
+              <img src="./images/kredit.png" width="156" height="189" alt="Кредит.">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <div class="wrapper">
     <a href="#" class="delivery-group">
       <div class="delivery-image">
@@ -327,13 +555,21 @@
         <ul class="page-footer-buttons">
           <li>
             <a href="#"
-               class="contacts-address-text button-footer contacts-address-text-padding contacts-address-text-button ">Доставка</a>
+               class="contacts-address-text button-footer contacts-address-text-padding contacts-address-text-button ">
+              Доставка
+            </a>
           </li>
           <li>
-            <a href="#" class="contacts-address-text button-footer contacts-address-text-button ">Гарантия</a>
+            <a href="#"
+               class="contacts-address-text button-footer contacts-address-text-button contacts-address-text-padding">
+              Гарантия
+            </a>
           </li>
           <li>
-            <a href="#" class="contacts-address-text button-footer contacts-address-text-button ">Контакты</a>
+            <a href="#"
+               class="contacts-address-text button-footer contacts-address-text-button contacts-address-text-padding">
+              Контакты
+            </a>
           </li>
         </ul>
       </nav>
@@ -411,8 +647,11 @@
             <div class="quantity-title">
               <label>Количество:</label>
               <div class="tooltip-div">
-                <button class="information tooltip-toggle" type="button" aria-labelledby="tooltip-label">i</button>
-                <div class="tooltip" role="tooltip" id="tooltip-label">Постараемся найти, сколько нужно. Привезём
+                <button class="information tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                  i
+                </button>
+                <div class="tooltip" role="tooltip" id="tooltip-label">
+                  Постараемся найти, сколько нужно. Привезём
                   сколько
                   получится по требованиям
                   к провозу багажа.
