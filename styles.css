@@ -1756,6 +1756,20 @@ body {
   display: none;
 }
 
+.tooltip-basket {
+  position: absolute;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Rubik", "Arial", sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 20px;
+  margin-top: 20px;
+  z-index: 1;
+  left: -120px;
+  top: 100%;
+}
+
 .tooltip-toggle:hover + .tooltip,
 .tooltip-toggle:focus + .tooltip {
   display: block;
@@ -1779,5 +1793,4 @@ body {
 
 .tooltip-div {
   position: relative;
-  /*padding-left: 9px;*/
 }
